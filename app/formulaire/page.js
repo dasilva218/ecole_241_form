@@ -8,12 +8,12 @@ import { Form } from "../components/Form";
 export default function Forms() {
   return (
     <body className="flex flex-col">
-      <div className="mx-auto">
+      <div className="flex justify-center">
           <img src=" \assets\img.svg"
           alt=""
           width={500}
           height={500}
-          className=""
+          className="block mx-auto"
           > 
           </img>
         </div>
