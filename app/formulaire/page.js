@@ -6,9 +6,20 @@ import { Input } from "../components/Input";
 
 export default function Form() {
   return (
-    <div className="max-w-lg mx-auto my-5 p-5 bg-white rounded-lg shadow-md">
-      <h1 className="text-center text-gray-800">Formulaire de confirmation</h1>
-       <form className="flex flex-col">
+    <body className="flex flex-col ">
+      <div className="mx-auto">
+          <img src=" \assets\img.svg"
+          alt=""
+          width={500}
+          height={500}
+          className=" "
+          > 
+          </img>
+        </div>
+      <div className="max-w-lg mx-auto my-5 p-5 bg-white rounded-lg shadow-md">
+        <h1 className="text-center text-gray-800 font-bold text-3xl">Formulaire de confirmation</h1>
+        
+        <form className="flex flex-col">
         <fieldset className="border border-gray-300 p-4 mb-5 rounded-lg ">
           <legend className="font-bold mb-2.5 text-gray-700">Informations Personnelles:</legend>
           <label htmlFor="nom" className="mb-1.5 block text-gray-800">Nom:</label>
@@ -38,12 +49,12 @@ export default function Form() {
         </fieldset>
 
         <fieldset className="border border-gray-300 p-4 mb-5 rounded-lg ">
-           <legend className="font-bold mb-2.5 text-gray-700">Réponse Oui/Non</legend>
-           <label className="mb-1.5 block text-gray-800">Acceptez-vous de continuer ?</label>
-           <input type="radio"value="oui" className="mr-1.25"></input>
-           <label className="mb-1.5 block text-gray-800">Oui</label>
-           <input type="radio"value="non" className="mr-1.25"></input>
-           <label className="mb-1.5 block text-gray-800">non</label>
+        <legend className="font-bold mb-2.5 text-gray-700">Réponse Oui/Non</legend>
+        <label className="mb-1.5 block text-gray-800">Acceptez-vous de continuer ?</label>
+        <input type="radio"value="oui" className="mr-1.25"></input>
+        <label className="mb-1.5 block text-gray-800">Oui</label>
+        <input type="radio"value="non" className="mr-1.25"></input>
+        <label className="mb-1.5 block text-gray-800">non</label>
         </fieldset>
 
         <fieldset className="border border-gray-300 p-4 mb-5 rounded-lg">
@@ -67,8 +78,18 @@ export default function Form() {
         </fieldset>
         <button type="submit" className="bg-red-500 text-white border-none py-2 px-4 rounded cursor-pointer text-base hover:bg-red-600">Envoyer</button>
       </form>
+      <div className="bg-cover center ">
+          <img src=" \assets\img1.svg"
+          alt=""
+          width={500}
+          height={500}
+          className=""
+          > 
+          </img>
+        </div>
 
     </div>
+  </body>    
   );
 }
 
