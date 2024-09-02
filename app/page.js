@@ -1,6 +1,8 @@
 "use client";
 
 import { Button } from 'antd';
+import getFontSizes from 'antd/es/theme/themes/shared/genFontSizes';
+import { Roboto } from 'next/font/google';
 import React, { useEffect } from 'react';
 
 export default function QRCodeGenerator() {
@@ -10,8 +12,8 @@ export default function QRCodeGenerator() {
     script.onload = () => {
       new QRCode(document.getElementById("qrcode"), {
         text: "https://lee20charly.github.io/formulaire-ecole-241/",
-        width: 256,
-        height: 256,
+        width: 330,
+        height:330,
         colorDark: "#000000",
         colorLight: "#ffffff",
         correctLevel: QRCode.CorrectLevel.H,
@@ -23,7 +25,7 @@ export default function QRCodeGenerator() {
   return (
     <div style={styles.body}>
       <div style={styles.container}>
-        <h1 style={styles.heading}>Scannez ce QR Code pour continuer</h1>
+        <h1 className='text-3xl font-bold hover:scale-105'>Scannez pour Rejoindre l'Aventure 🥳</h1>
         <div id="qrcode" style={styles.qrcode}></div>
       </div>
     </div>
@@ -32,6 +34,7 @@ export default function QRCodeGenerator() {
 
 const styles = {
   body: {
+
     fontFamily: 'Arial, sans-serif',
     display: 'flex',
     justifyContent: 'center',
@@ -46,17 +49,15 @@ const styles = {
     flexDirection: 'column',
     justifyContent: 'center',
     backgroundColor: 'white',
-    width: '50%',
+    width: '80%',
     padding: '2rem',
     borderRadius: '10px',
     boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
     height: '60%',
   },
-  heading: {
-    color: '#333',
-    marginBottom: '2rem',
-  },
   qrcode: {
     margin: '1rem auto',
   },
+
+
 };
