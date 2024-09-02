@@ -8,31 +8,36 @@ import { Form } from "../components/Form";
 export default function Forms() {
   return (
     <body className="flex flex-col">
-      <div className="mx-auto">
-          <img src=" \assets\img.svg"
+      {/* Section pour la première image */}
+      <div className="flex justify-center">
+        <img
+          src="/assets/img.svg"
           alt=""
           width={500}
           height={500}
-          className=""
-          > 
-          </img>
-        </div>
-      <div className="max-w-lg mx-auto my-5 p-5 bg-white rounded-lg shadow-md">
-        <h1 className="text-center text-gray-800 font-bold text-3xl">Formulaire de confirmation</h1>
-        <Form/>
-      
-      <div className="bg-cover center ">
-          <img src=" \assets\img1.svg"
-          alt=""
-          width={500}
-          height={500}
-          className=""
-          > 
-          </img>
-        </div>
+          className="block mx-auto"
+        />
+      </div>
 
-    </div>
-  </body>    
+      {/* Conteneur du formulaire */}
+      <div className="max-w-lg mx-auto my-5 p-5 bg-white rounded-lg shadow-md">
+        <h1 className="text-center text-gray-800 font-bold text-3xl">
+          Formulaire de confirmation
+        </h1>
+        <Form />
+        
+        {/* Section pour la deuxième image */}
+        <div className="flex justify-center mt-5">
+          <img
+            src="/assets/img1.svg"
+            alt=""
+            width={500}
+            height={500}
+            className="block mx-auto"
+          />
+        </div>
+      </div>
+    </body>
   );
 }
 

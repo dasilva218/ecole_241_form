@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from 'antd';
 import React, { useEffect } from 'react';
 
 export default function QRCodeGenerator() {
