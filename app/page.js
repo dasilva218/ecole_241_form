@@ -1,18 +1,19 @@
-"use client";
+'use client';
 
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 export default function QRCodeGenerator() {
   useEffect(() => {
     const script = document.createElement('script');
-    script.src = "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js";
+    script.src =
+      'https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js';
     script.onload = () => {
-      new QRCode(document.getElementById("qrcode"), {
-        text: "https://lee20charly.github.io/formulaire-ecole-241/",
+      new QRCode(document.getElementById('qrcode'), {
+        text: 'https://lee20charly.github.io/formulaire-ecole-241/',
         width: 256,
         height: 256,
-        colorDark: "#000000",
-        colorLight: "#ffffff",
+        colorDark: '#000000',
+        colorLight: '#ffffff',
         correctLevel: QRCode.CorrectLevel.H,
       });
     };
@@ -22,8 +23,10 @@ export default function QRCodeGenerator() {
   return (
     <div style={styles.body}>
       <div style={styles.container}>
-        <h1 style={styles.heading}>Scannez ce QR Code pour continuer</h1>
-        <div id="qrcode" style={styles.qrcode}></div>
+        <h1 style={styles.heading}>
+          Scannez ce QR Code pour continuer
+        </h1>
+        <div id='qrcode' style={styles.qrcode}></div>
       </div>
     </div>
   );
@@ -37,7 +40,7 @@ const styles = {
     alignItems: 'center',
     height: '100vh',
     margin: 0,
-    backgroundColor:'#f0f0f0',
+    backgroundColor: '#f0f0f0',
   },
   container: {
     textAlign: 'center',
