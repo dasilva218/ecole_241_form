@@ -58,6 +58,6 @@ const styles = {
   qrcode: {
     margin: '1rem auto',
   },
-
+//  le travaille continue 
 
 };
